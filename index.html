@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lazy Moth Studio</title>
+<meta name="description" content="Lazy Moth Studio makes calm, thoughtful games. Our first game is Foldway, a logic puzzle tower where every ladder unfolds once.">
+<link rel="icon" href="foldway-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root { --night:#0E1A24; --panel:#1B2B36; --panel-high:#243844; --cream:#F1EEDF; --soft:#93AEB0; --gold:#F2C879; --mint:#86C5AF; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--night); color:var(--cream); font-family:Roboto, system-ui, sans-serif; line-height:1.6; }
+  a { color:var(--gold); }
+  .wrap { max-width:1040px; margin:0 auto; padding:0 20px; }
+  header { padding:28px 0 8px; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+  .brand { font-weight:700; letter-spacing:4px; font-size:14px; text-transform:uppercase; }
+  nav a { color:var(--soft); text-decoration:none; margin-left:18px; font-size:14px; }
+  nav a:hover { color:var(--cream); }
+  .hero { padding:48px 0 28px; display:grid; grid-template-columns:auto 1fr; gap:28px; align-items:center; }
+  .hero img { width:120px; height:120px; border-radius:28px; }
+  h1 { font-family:'Noto Serif', Georgia, serif; font-size:44px; line-height:1.15; margin:0 0 8px; }
+  .lede { color:var(--soft); font-size:18px; margin:0; max-width:620px; }
+  .play { display:inline-block; margin-top:20px; padding:14px 24px; border-radius:14px; background:var(--gold); color:var(--night); font-weight:700; text-decoration:none; }
+  .play:hover { filter:brightness(1.06); }
+  .shots { display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:14px; margin:20px 0 8px; }
+  .shots img { width:100%; border-radius:14px; display:block; }
+  section { padding:28px 0; }
+  h2 { font-family:'Noto Serif', Georgia, serif; font-size:26px; margin:0 0 12px; }
+  .features { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:12px; padding:0; margin:0; list-style:none; }
+  .features li { background:var(--panel); border-radius:14px; padding:14px 16px; color:var(--cream); }
+  .features b { color:var(--gold); }
+  footer { border-top:1px solid var(--panel-high); margin-top:28px; padding:22px 0 36px; color:var(--soft); font-size:14px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+  @media (max-width:720px) {
+    .hero { grid-template-columns:1fr; text-align:left; }
+    h1 { font-size:34px; }
+    .shots { grid-template-columns:1fr; }
+    .features { grid-template-columns:1fr; }
+    nav a { margin-left:0; margin-right:16px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="brand">Lazy Moth Studio</span>
+    <nav><a href="#foldway">Foldway</a><a href="privacy.html">Privacy</a><a href="mailto:studiolazymoth@gmail.com">Contact</a></nav>
+  </header>
+
+  <main id="foldway">
+    <div class="hero">
+      <img src="foldway-icon.png" alt="Foldway app icon: a lantern-lit door">
+      <div>
+        <h1>Foldway</h1>
+        <p class="lede">A logic puzzle tower where every ladder unfolds once. Stand it up to climb or lay it across a gap, and it stays there for good. Where you put each one is the whole puzzle.</p>
+        <a class="play" href="https://play.google.com/store/apps/details?id=com.foldway.game">Get Foldway on Google Play</a>
+      </div>
+    </div>
+
+    <div class="shots">
+      <img src="shot-ladders.jpg" alt="A puzzle room with folding ladders and a lit door">
+      <img src="shot-home.jpg" alt="Foldway's home screen over a stone cistern room">
+      <img src="shot-rooms.jpg" alt="The rooms of world VII shown as stepping stones along a path">
+    </div>
+
+    <section>
+      <h2>Simple pieces, real puzzles</h2>
+      <ul class="features">
+        <li><b>176 rooms</b> across 15 worlds, every one checked by a solver and tested against a player who makes the obvious move.</li>
+        <li><b>New ideas as you climb:</b> crates, gates, keys, clockwork sentries, ropes, floods, dark rooms and echoes of yourself.</li>
+        <li><b>A daily room</b> for everyone, and the Endless Climb for when you want more.</li>
+        <li><b>Calm and offline:</b> no timer, no account, hints when you need them, and options like relaxed sentries and a left-handed layout.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Lazy Moth Studio</span>
+    <span><a href="privacy.html">Privacy policy</a> · <a href="mailto:studiolazymoth@gmail.com">studiolazymoth@gmail.com</a></span>
+  </footer>
+</div>
+</body>
+</html>
